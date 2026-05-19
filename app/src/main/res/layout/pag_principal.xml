@@ -1,0 +1,108 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo">
+
+    <!-- Logo arriba -->
+    <ImageView
+        android:id="@+id/yallego"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_yallegova1" />
+
+    <!-- Botón campana arriba a la derecha -->
+
+    <ImageView
+        android:id="@+id/yallego"
+        android:layout_width="408dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="76dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_lineas" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCampana"
+        android:layout_width="42dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/fondo"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/campana" />
+
+    <!-- Mapa de Línea 1 -->
+
+    <!-- Mapa de Línea 2 -->
+    <fragment
+        android:id="@+id/mapFragmentLinea1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="149dp"
+        android:layout_height="219dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/yallego"
+        app:layout_constraintVertical_bias="0.427" />
+
+    <!-- Botón Línea 1 -->
+
+    <!-- Botón Línea 2 -->
+
+    <fragment
+        android:id="@+id/mapFragmentLinea2"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="149dp"
+        android:layout_height="219dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/yallego"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <ImageButton
+        android:id="@+id/btnLinea1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="404dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo_vancentro" />
+
+    <ImageButton
+        android:id="@+id/btnLinea2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="404dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/logo_vanrenaceres" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="632dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
